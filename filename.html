@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-size: 120%;
+      background-image: url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmVwYWwlMjBtb3VudGFpbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .weather {
+      visibility: hiddens;
+      width: 60vh;
+      margin: 100px;
+      padding: 35px;
+      margin-right: -600px;
+    }
+
+    .outside {
+      width: 113%;
+      border: none;
+      outline: none;
+      font-size: 1.2rem;
+      height: 50px;
+      padding: 0 10px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgb(0 0 0 / 0.5);
+      transition: transform 0.2s;
+      margin-left: -300px;
+    }
+
+    .outside:hover {
+      transform: scale(1.1);
+    }
+
+    .weatherr {
+      width: 96%;
+      padding: 50px;
+      line-height: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 5px 15px rgb(0 0 0 / 0.5);
+      height: 30vh;
+      margin-right: 0 30px;
+      margin-top: 10px;
+      transition: transform 0.2s;
+      margin-left: -300px;
+    }
+
+    .weatherr:hover {
+      transform: scale(1.1);
+    }
+
+    #icon {
+      position: absolute;
+      margin-left: -5px;
+      margin-top: -50px;
+    }
+
+    #time {
+      margin-top: -50px;
+      margin-left: 370px;
+    }
+
+    #mycity {
+      margin-left: 50px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    #temperature {
+      margin: 0;
+      margin-bottom: 0.2em;
+      margin-left: 50px;
+      margin-top: -50px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    #humidity {
+      margin-left: 100px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    #wind {
+      margin-left: 100px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+    }
+
+    #description {
+      margin-left: 60px;
+      margin-top: -15px;
+      text-transform: capitalize;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    #pressure {
+      margin-left: 101px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    ::selection {
+      background-color: rgb(71, 207, 212);
+    }
+  </style>
+
+  <body>
+    <div class="weather">
+      <div class="outside">
+        <h1 id="mycity"></h1>
+      </div>
+
+      <div class="weatherr">
+        <h6 id="time"></h6>
+        <h1 id="temperature"></h1>
+        <img src="" alt="" id="icon" />
+        <h5 id="description"></h5>
+        <h3 id="humidity"></h3>
+        <h3 id="wind"></h3>
+        <h3 id="pressure"></h3>
+        <h4 id="LastUpdated"></h4>
+      </div>
+    </div>
+
+    <script src="filename.js"></script>
+  </body>
+</html>
